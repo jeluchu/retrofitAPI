@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RetrofitAPI</string>
+    <string name="tiempo">Obtener datos del tiempo</string>
+</resources>
