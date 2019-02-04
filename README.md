@@ -33,7 +33,7 @@ fun getCurrentWeatherData(@Query("lat") lat: String, @Query("lon") lon: String, 
 Serialized Name the value that I collect from the API and convert it to a float (in these case)
 ```
 @SerializedName("temp")
-var temp: Float = 0.toFloat()
+var temp: Float = 0.0f
 
 [...]
 
