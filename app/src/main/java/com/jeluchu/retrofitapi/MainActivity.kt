@@ -43,13 +43,13 @@ class MainActivity : AppCompatActivity() {
                             weatherResponse.sys!!.country +
                             "<br>" +
                             "<b>Temperatura:</b> " +
-                            weatherResponse.main!!.temp +
+                            (weatherResponse.main!!.temp - 273).toString().substring(0,3) + " ºC" +
                             "<br>" +
                             "<b>Temperatura(Min):</b> " +
-                            weatherResponse.main!!.temp_min +
+                            (weatherResponse.main!!.temp_min - 273).toString().substring(0,3) + " ºC" +
                             "<br>" +
                             "<b>Temperatura(Max):</b> " +
-                            weatherResponse.main!!.temp_max +
+                            (weatherResponse.main!!.temp_max - 273).toString().substring(0,3) + " ºC" +
                             "<br>" +
                             "<b>Humedad:</b> " +
                             weatherResponse.main!!.humidity +
